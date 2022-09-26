@@ -19,7 +19,6 @@ body{
 nav{
     display: flex;
     align-items: center;
-    /*flex-wrap: wrap;*/
 }
 .logo{
     width: 170px;
@@ -181,13 +180,12 @@ nav ul li a:hover::after{
 }
 .gallery{
   margin: 5px;
-  border: 1px solid #ccc;
   float: left;
   width: 30%;
   height: 25%;
 }
 .gallery:hover{
-  border: 1px solid #777;
+  border: 3px solid rgb(33, 226, 181);
 }
 .gallery img{
   width: 100%;
@@ -208,7 +206,6 @@ nav ul li a:hover::after{
 	padding:82px 60px 25px 60px;
     margin-top: 50px;
 	overflow: hidden;
-    /*border-top: 3px solid #00fdff;*/
 }
 /* Footer left */
 .footer-distributed .footer-left{
