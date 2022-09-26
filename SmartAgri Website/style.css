@@ -1,0 +1,346 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    color: white;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding: 10px 100px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+}
+.logo{
+    width: 170px;
+    height: 75px;
+}
+.nav-items{
+    margin-left: 550px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 32px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+/*-----------------------------Scroller to top------------------------------------*/
+/*Floating Back-To-Top Button*/
+.scroll-top{
+    border: 2px solid rgb(20, 218, 46);
+    background-color: black;
+    bottom: 30px;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    left: 95%;
+    border-radius: 4px;
+}
+.details-top{
+    display: inline-flex;
+    margin: 5px 24%;
+    padding: 10px 10px;
+    text-align: center;
+    justify-content: center;
+}
+.details-bottom{
+    display: inline-flex;
+    margin: 5px 29%;
+    padding: 10px 10px;
+    text-align: center;
+    justify-content: center;
+}
+.humidity-text{
+    margin: 5px 20px;
+    padding: 50px 50px;
+    font-size: 80px;
+    background-color: black;
+    color: #ff004f;
+    text-align: center;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+}
+.temp-text{
+    margin: 5px 20px;
+    padding: 50px 50px;
+    font-size: 80px;
+    background-color: black;
+    color: #12caf1;
+    text-align: center;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+}
+.soilmois-text{
+    margin: 5px 5px 15px 15px;
+    padding: 50px 50px;
+    font-size: 80px;
+    background-color: black;
+    color: #ffb300;
+    text-align: center;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+}
+#currentTime{
+    background-color: black;
+    border: none;
+    color: #6e00ff;
+    font-size: 80px;
+    text-align: center;
+    inline-size: 200px;
+    border-inline-start-width: 250px;
+}
+.time-text{
+    margin: 5px 20px;
+    padding: 50px 50px;
+    font-size: 80px;
+    background-color: black;
+    color: #6e00ff;
+    text-align: center;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+}
+.address-text{
+    margin: 5px 20px;
+    padding: 50px 50px;
+    font-size: 80px;
+    background-color: black;
+    color: #ff00ca;
+    text-align: center;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+}
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+.heading2{
+    padding: 10px 0px 0px 128px;
+    margin: 5px 5px;
+    font-size: 27px;
+}
+.history2{
+    padding: 0px 0px 0px 470px;
+    margin: 5px 10px;
+}
+.photos{
+    padding-left: 7%;
+}
+.gallery{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 30%;
+  height: 25%;
+}
+.gallery:hover{
+  border: 1px solid #777;
+}
+.gallery img{
+  width: 100%;
+  height: auto;
+}
+.desc{
+  padding: 15px;
+  text-align: center;
+}
+/*-----------------------------FOOTER------------------------------------------*/
+.footer-distributed{
+	background: black;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding:82px 60px 25px 60px;
+    margin-top: 50px;
+	overflow: hidden;
+    /*border-top: 3px solid #00fdff;*/
+}
+/* Footer left */
+.footer-distributed .footer-left{
+	float: left;
+}
+/* The company logo */
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0px;
+}
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+/* Footer links */
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 8px 0px 8px 0px;
+	padding: 0;
+}
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+/* Footer social icons */
+.footer-distributed .footer-icons{
+	margin-top: 20px;
+}
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  black;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.footer-img-f{
+    width: 33px;
+    height: 32px;
+}
+.footer-img-g{
+    width: 28px;
+    height: 26px;
+}
+.footer-img-i{
+    width: 32px;
+    height: 30px;
+}
+.footer-img-L{
+    width: 28px;
+    height: 28px;
+    padding-bottom: 3px;
+}
+.footer-img-t{
+    width: 30px;
+    height: 30px;
+}
+/* Footer Right */
+.footer-distributed .footer-right{
+	float: right;
+}
+#contact-footer{
+    font-size: 20px;
+}
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 20px 0 0;
+	color: #ffffff;
+}
+/* The contact form */
+.footer-distributed form{
+	display: inline-block;
+}
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 20px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+	width: 400px;
+	padding: 18px;
+}
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+    font-size: 18px;
+}
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+    font-size: 18px;
+}
+.footer-distributed form button{
+    border-radius: 58px;
+    background-color: #33383b;
+    color: #ffffff;
+    border: 0;
+    padding: 10px 35px;
+    margin-right: 120px;
+    font-weight: bold;
+    float: right;
+    font-size: 18px;
+}
