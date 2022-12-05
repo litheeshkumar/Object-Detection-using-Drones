@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>SmartAgri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div>
+                    <img src="pics/logo.png" class="logo">
+                </div>
+                <div>
+                    <ul class="nav-items">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#history">History</a></li>
+                        <li><a href="#photos">Photos</a></li>
+                        <li><a href="#foot1">Contact us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="details-top">
+                <div>
+                    <div class="humidity-text">89</div>
+                    <div>Humidity</div>
+                </div>
+                <div>
+                    <div class="temp-text">35</div>
+                    <div>Temperature</div>
+                </div>
+                <div>
+                    <div class="soilmois-text">95</div>
+                    <div>Soil Moisture</div>
+                </div>
+            </div>
+            <div class="details-bottom">
+                <div>
+                    <div class="time-text">
+                        <!--<input type="text" id="currentTime">
+                    <script>
+                    var today = new Date();
+                    var time = today.getHours() + ":" + today.getMinutes();
+                    document.getElementById("currentTime").value = time;
+                    </script>-->10:00
+                    </div>
+                    <div>Time</div>
+                </div>
+                <div>
+                    <div class="address-text">52</div>
+                    <div>Rainfall %</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="history">
+        <div class="heading2">
+            Data History of the crop:
+        </div>
+        <div class="history2">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Humidity</th>
+                        <th>Temperature</th>
+                        <th>Soil Moisture</th>
+                        <th>Rainfall %</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>23-09-2022</td>
+                        <td>89</td>
+                        <td>35</td>
+                        <td>95</td>
+                        <td>52</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td>22-09-2022</td>
+                        <td>90</td>
+                        <td>36</td>
+                        <td>95</td>
+                        <td>52</td>
+                    </tr>
+                    <tr>
+                        <td>21-09-2022</td>
+                        <td>89</td>
+                        <td>36</td>
+                        <td>95</td>
+                        <td>50</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td>20-09-2022</td>
+                        <td>91</td>
+                        <td>34</td>
+                        <td>95</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>19-09-2022</td>
+                        <td>92</td>
+                        <td>35</td>
+                        <td>96</td>
+                        <td>52</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td>18-09-2022</td>
+                        <td>89</td>
+                        <td>34</td>
+                        <td>96</td>
+                        <td>52</td>
+                    </tr>
+                    <tr>
+                        <td>17-09-2022</td>
+                        <td>88</td>
+                        <td>34</td>
+                        <td>94</td>
+                        <td>52</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td>16-09-2022</td>
+                        <td>88</td>
+                        <td>33</td>
+                        <td>95</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>15-09-2022</td>
+                        <td>90</td>
+                        <td>35</td>
+                        <td>93</td>
+                        <td>50</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td>14-09-2022</td>
+                        <td>90</td>
+                        <td>35</td>
+                        <td>93</td>
+                        <td>52</td>
+                    </tr>
+                    <tr>
+                        <td>13-09-2022</td>
+                        <td>91</td>
+                        <td>36</td>
+                        <td>93</td>
+                        <td>52</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td>12-09-2022</td>
+                        <td>92</td>
+                        <td>37</td>
+                        <td>92</td>
+                        <td>52</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <a href="#">
+        <img class="scroll-top" src="pics/footer/up-arrow.png" alt="Top">
+    </a>
+    <div id="photos">
+        <div class="heading2">
+            Photos:
+        </div>
+        <div class="photos" >
+            <div class="gallery">
+                <img src="pics/Phase1_Pics/Hardware_Pics/phase1_hardware.png" alt="Cinque Terre">
+                <div class="desc"> Phase-1 Hardware connections </div>
+            </div>
+            <div class="gallery">
+                <img src="pics/Phase1_Pics/Hardware_Pics/Mosquitto_Publish.png" alt="Forest">
+                <div class="desc"> MQTT Publish Command </div>
+            </div>
+            <div class="gallery">
+                <img src="pics/Phase1_Pics/Hardware_Pics/Mosquitto_subscribe.png" alt="Northern Lights">
+                <div class="desc"> MQTT Subscribe Command </div>
+            </div>
+            <div class="gallery">
+                <img src="pics/Phase2_Pics/Hardware_pic.jpg" alt="Mountains">
+                <div class="desc"> Phase-2 Hardware connections </div>
+            </div>
+            <div class="gallery">
+                <img src="pics/Phase2_Pics/Screenshot 2022-09-25 003032.png" alt="Mountains">
+                <div class="desc"> Raspberry Pi photos/ videos code </div>
+            </div>
+            <div class="gallery">
+                <img src="pics/Phase2_Pics/Screenshot 2022-09-25 003058.png" alt="Mountains">
+                <div class="desc"> Raspberry Pi photos/ videos output </div>
+            </div>
+        </div>
+    <footer class="footer-distributed" id="foot1">
+        <div class="footer-left">
+            <img src="pics/logo.png" class="logo">
+            <p class="footer-links">
+                <a href="#">Home</a>
+                &nbsp|&nbsp
+                <a href="#history">History</a>
+                &nbsp|&nbsp
+                <a href="#photos">Photos</a>
+                &nbsp|&nbsp
+                <a href="#">Faq</a>
+                &nbsp|&nbsp
+                <a href="#foot1">Contact</a>
+            </p>
+            <p class="footer-company-name">Copyright © 2022 SmartAgri | All rights reserved.</p>
+            <div class="footer-icons">
+                <a href="https://m.facebook.com/100013081330560/"><img class="footer-img-f" src="pics/footer/facebook.png" alt="f"></a>
+                <a href="https://github.com/litheeshkumar"><img class="footer-img-g" src="pics/footer/github.png" alt="g"></a>
+                <a href="https://www.instagram.com/litheeshkumarkamarthi/"><img class="footer-img-i" src="pics/footer/Insta.png" alt="i"></a>
+                <a href="https://www.linkedin.com/in/kamarthi-litheesh-kumar-51b527194/"><img class="footer-img-L" src="pics/footer/linkedin.png" alt="L"></a>
+                <a href="https://twitter.com/LKamarthi"><img class="footer-img-t" src="pics/footer/twitter.png" alt="t"></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p id="contact-footer">Contact Us :</p>
+            <form action="#" method="post">
+                <input type="text" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
